@@ -1,5 +1,5 @@
-var ServerID = "SERVER_ID_HERE"; //اي دي السيرفر
-var ChannelID = "CHANNEL_ID_HERE";// اي دي الروم
+var ServerID = "508196822242689030"; //اي دي السيرفر
+var ChannelID = "508196822242689032";// اي دي الروم
 
 /*	
  
