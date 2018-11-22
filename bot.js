@@ -1,243 +1,264 @@
-    const Discord = require("discord.js");
-    const Enmap = require(`enmap`);
-    const farm = new Enmap();
+const Discord = require('discord.js');
+const client = new Discord.Client();
+const client2 = new Discord.Client();
+const client3 = new Discord.Client();
+const client4 = new Discord.Client();
+const client5 = new Discord.Client();
+const client6 = new Discord.Client();
+const client7 = new Discord.Client();
+
+var prefix = "1";
+var prefix2 = "2";
+var prefix3 = "3";
+var prefix4 = "4";
+var prefix5 = "5";
+var prefix6 = "6";
+var prefix7 = "7";
+
+client.on('ready', () => {
+  console.log(`Logged in as ${client.user.tag}!`);  
+  client.user.setGame(`SPAM ? (1)`,"http://twitch.tv/Dream")
+  client.user.setStatus("dnd")
+
+});
+
+client.on('ready', async() => {
+var server = "508196822242689030"; // ايدي السررفر
+var channel = "508196822242689032";//ايدي الروم
+    setInterval(()=>{
+    client.guilds.get(server).channels.get(channel).send('***FAST IS OP***')
+    },305);
+})
+
+client.on('message', message => {
+  if (message.author.bot) return;
+  if (!message.content.startsWith(prefix)) return;
+
+  let command = message.content.split(" ")[0];
+  command = command.slice(prefix.length);
+
+  let args = message.content.split(" ").slice(1);
+
+  if (message.content.startsWith(prefix + 'say')) {
+    if(!message.member.hasPermission('ADMINISTRATOR')) return message.channel.send('?|**\`ADMINISTRATOR\`ليس لديك صلاحيات`**');
+   message.channel.sendMessage(args.join("  "))
+   message.delete()
+  }
+ });
 
 
-    const client1 = new Discord.Client();
-    const client_2 = new Discord.Client();
-    const client_3 = new Discord.Client();
-    const client_4 = new Discord.Client();
-    const client_5 = new Discord.Client();
-    const client_6 = new Discord.Client();
+ client2.on('ready', () => {
+  console.log(`Logged in as ${client2.user.tag}!`);  
+  client2.user.setGame(`SPAM ?`,"http://twitch.tv/Dream")
+  client2.user.setStatus("dnd")
+
+});
 
 
-    client1.on('ready', () => {
-    console.log(`Logged in as ${client1.user.tag}!`);
-    });
-    function randomIntFromInterval(min,max){
-        return Math.floor(Math.random()*(max-min+1)+min);
-    }
-    client1.on('message', msg => {
-        let ownerid = '278261303540187137';
-        if(msg.author.id === ownerid){
-            if(msg.content === "farm"){
-                if(msg.channel.id !== "508196822242689032") return;
-                let count = 0;
-                farm.set(`farm`, 'true')
-                setInterval(function(){
-                    setTimeout(function(){
-                        if(farm.get(`farm`) !== 'true') return;
-                        count++;
-                        msg.channel.send(`${randomIntFromInterval(1135,1234)}${randomIntFromInterval(1135,1334)}${randomIntFromInterval(1135,1534)} #${count}`)
-                    }, randomIntFromInterval(250, 300))
-                }, randomIntFromInterval(1119, 2119))
-            }
-            if(msg.content.startsWith(`credits`)){
-                if(msg.channel.id !== "510836021357838336") return;
-                if(msg.isMentioned(client1.user)){
-                    farm.set(`farm`, 'blah blah')
-                    let args = msg.content.split(` `)
-                    msg.channel.send(`#credits <@!${msg.author.id}> ${args[2]}`).then(()=>{
-                        const filter = m => m.author.id === msg.author.id;
-                        msg.channel.awaitMessages(filter, {max: 1, time: 29000}).then(col=>{
-                            if(col.first().content === "cancel"){
-                                return msg.reply(`Canceled!`);
-                            }
-                            msg.channel.send(`${col.first().content}`).then(()=> farm.set(`farm`, 'true'))
-                        })
-                    })
-                }
-            }
-        }
-    });
+client2.on('ready', async() => {
+var server = "508196822242689030"; // ايدي السررفر
+var channel = "508196822242689032";//ايدي الروم
+    setInterval(()=>{
+    client2.guilds.get(server).channels.get(channel).send('***FAST IS OP***')
+    },305);
+})
+
+client2.on('message', message => {
+  if (message.author.bot) return;
+  if (!message.content.startsWith(prefix2)) return;
+
+  let command2 = message.content.split(" ")[0];
+  command2 = command2.slice(prefix2.length);
+
+  let args = message.content.split(" ").slice(1);
+
+  if (command2 == "say") {
+if(!message.member.hasPermission('ADMINISTRATOR')) return message.channel.send('?|**\`ADMINISTRATOR\`ليس لديك صلاحيات`**');
+   message.channel.sendMessage(args.join("  "))
+   message.delete()
+  }
+ });
+
+ client3.on('ready', () => {
+  console.log(`Logged in as ${client3.user.tag}!`);  
+  client3.user.setGame(`SPAM ? (3)`,"http://twitch.tv/Dream")
+  client3.user.setStatus("dnd")
+
+});
+
+client3.on('ready', async() => {
+var server = "508196822242689030"; // ايدي السررفر
+var channel = "508196822242689032";//ايدي الروم
+    setInterval(()=>{
+    client3.guilds.get(server).channels.get(channel).send('***FAST IS OP***')
+    },305);
+})
+
+client3.on('message', message => {
+  if (message.author.bot) return;
+  if (!message.content.startsWith(prefix3)) return;
+
+  let command3 = message.content.split(" ")[0];
+  command3 = command3.slice(prefix3.length);
+
+  let args = message.content.split(" ").slice(1);
+
+  if (command3 == "say") {
+    if(!message.member.hasPermission('ADMINISTRATOR')) return message.channel.send('?|**\`ADMINISTRATOR\`ليس لديك صلاحيات`**');
+   message.channel.sendMessage(args.join("  "))
+   message.delete()
+  }
+ });
 
 
-    function randomIntFromInterval(min,max){
-        return Math.floor(Math.random()*(max-min+1)+min);
-    }
-    client_2.on('message', msg => {
-        let ownerid = '278261303540187137';
-        if(msg.author.id === ownerid){
-            if(msg.content === "farm"){
-                if(msg.channel.id !== "508196822242689032") return;
-                let count = 0;
-                farm.set(`farm`, 'true')
-                setInterval(function(){
-                    setTimeout(function(){
-                        if(farm.get(`farm`) !== 'true') return;
-                        count++;
-                        msg.channel.send(`${randomIntFromInterval(1135,1234)}${randomIntFromInterval(1135,1334)}${randomIntFromInterval(1135,1534)} #${count}`)
-                    }, randomIntFromInterval(250, 300))
-                }, randomIntFromInterval(1119, 2119))
-            }
-            if(msg.content.startsWith(`credits`)){
-                if(msg.channel.id !== "510836021357838336") return;
-                if(msg.isMentioned(client_2.user)){
-                    farm.set(`farm`, 'blah blah')
-                    let args = msg.content.split(` `)
-                    msg.channel.send(`#credits <@!${msg.author.id}> ${args[2]}`).then(()=>{
-                        const filter = m => m.author.id === msg.author.id;
-                        msg.channel.awaitMessages(filter, {max: 1, time: 29000}).then(col=>{
-                            if(col.first().content === "cancel"){
-                                return msg.reply(`Canceled!`);
-                            }
-                            msg.channel.send(`${col.first().content}`).then(()=> farm.set(`farm`, 'true'))
-                        })
-                    })
-                }
-            }
-        }
-    });
 
-    function randomIntFromInterval(min,max){
-        return Math.floor(Math.random()*(max-min+1)+min);
-    }
-    client_3.on('message', msg => {
-        let ownerid = '278261303540187137';
-        if(msg.author.id === ownerid){
-            if(msg.content === "farm"){
-                if(msg.channel.id !== "508196822242689032") return;
-                let count = 0;
-                farm.set(`farm`, 'true')
-                setInterval(function(){
-                    setTimeout(function(){
-                        if(farm.get(`farm`) !== 'true') return;
-                        count++;
-                        msg.channel.send(`${randomIntFromInterval(1135,1234)}${randomIntFromInterval(1135,1334)}${randomIntFromInterval(1135,1534)} #${count}`)
-                    }, randomIntFromInterval(250, 300))
-                }, randomIntFromInterval(1119, 2119))
-            }
-            if(msg.content.startsWith(`credits`)){
-                if(msg.channel.id !== "510836021357838336") return;
-                if(msg.isMentioned(client_3.user)){
-                    farm.set(`farm`, 'blah blah')
-                    let args = msg.content.split(` `)
-                    msg.channel.send(`#credits <@!${msg.author.id}> ${args[2]}`).then(()=>{
-                        const filter = m => m.author.id === msg.author.id;
-                        msg.channel.awaitMessages(filter, {max: 1, time: 29000}).then(col=>{
-                            if(col.first().content === "cancel"){
-                                return msg.reply(`Canceled!`);
-                            }
-                            msg.channel.send(`${col.first().content}`).then(()=> farm.set(`farm`, 'true'))
-                        })
-                    })
-                }
-            }
-        }
-    });
-    function randomIntFromInterval(min,max){
-        return Math.floor(Math.random()*(max-min+1)+min);
-    }
-    client_4.on('message', msg => {
-        let ownerid = '278261303540187137';
-        if(msg.author.id === ownerid){
-            if(msg.content === "farm"){
-                if(msg.channel.id !== "508196822242689032") return;
-                let count = 0;
-                farm.set(`farm`, 'true')
-                setInterval(function(){
-                    setTimeout(function(){
-                        if(farm.get(`farm`) !== 'true') return;
-                        count++;
-                        msg.channel.send(`${randomIntFromInterval(1135,1234)}${randomIntFromInterval(1135,1334)}${randomIntFromInterval(1135,1534)} #${count}`)
-                    }, randomIntFromInterval(250, 300))
-                }, randomIntFromInterval(1119, 2119))
-            }
-            if(msg.content.startsWith(`credits`)){
-                if(msg.channel.id !== "510836021357838336") return;
-                if(msg.isMentioned(client_4.user)){
-                    farm.set(`farm`, 'blah blah')
-                    let args = msg.content.split(` `)
-                    msg.channel.send(`#credits <@!${msg.author.id}> ${args[2]}`).then(()=>{
-                        const filter = m => m.author.id === msg.author.id;
-                        msg.channel.awaitMessages(filter, {max: 1, time: 29000}).then(col=>{
-                            if(col.first().content === "cancel"){
-                                return msg.reply(`Canceled!`);
-                            }
-                            msg.channel.send(`${col.first().content}`).then(()=> farm.set(`farm`, 'true'))
-                        })
-                    })
-                }
-            }
-        }
-    });
-    function randomIntFromInterval(min,max){
-        return Math.floor(Math.random()*(max-min+1)+min);
-    }
-    client_5.on('message', msg => {
-        let ownerid = '278261303540187137';
-        if(msg.author.id === ownerid){
-            if(msg.content === "farm"){
-                if(msg.channel.id !== "508196822242689032") return;
-                let count = 0;
-                farm.set(`farm`, 'true')
-                setInterval(function(){
-                    setTimeout(function(){
-                        if(farm.get(`farm`) !== 'true') return;
-                        count++;
-                        msg.channel.send(`${randomIntFromInterval(1135,1234)}${randomIntFromInterval(1135,1334)}${randomIntFromInterval(1135,1534)} #${count}`)
-                    }, randomIntFromInterval(250, 300))
-                }, randomIntFromInterval(1119, 2119))
-            }
-            if(msg.content.startsWith(`credits`)){
-                if(msg.channel.id !== "510836021357838336") return;
-                if(msg.isMentioned(client_5.user)){
-                    farm.set(`farm`, 'blah blah')
-                    let args = msg.content.split(` `)
-                    msg.channel.send(`#credits <@!${msg.author.id}> ${args[2]}`).then(()=>{
-                        const filter = m => m.author.id === msg.author.id;
-                        msg.channel.awaitMessages(filter, {max: 1, time: 29000}).then(col=>{
-                            if(col.first().content === "cancel"){
-                                return msg.reply(`Canceled!`);
-                            }
-                            msg.channel.send(`${col.first().content}`).then(()=> farm.set(`farm`, 'true'))
-                        })
-                    })
-                }
-            }
-        }
-    });
 
-    function randomIntFromInterval(min,max){
-        return Math.floor(Math.random()*(max-min+1)+min);
-    }
-    client_6.on('message', msg => {
-        let ownerid = '278261303540187137';
-        if(msg.author.id === ownerid){
-            if(msg.content === "farm"){
-                if(msg.channel.id !== "508196822242689032") return;
-                let count = 0;
-                farm.set(`farm`, 'true')
-                setInterval(function(){
-                    setTimeout(function(){
-                        if(farm.get(`farm`) !== 'true') return;
-                        count++;
-                        msg.channel.send(`${randomIntFromInterval(1135,1234)}${randomIntFromInterval(1135,1334)}${randomIntFromInterval(1135,1534)} #${count}`)
-                    }, randomIntFromInterval(250, 300))
-                }, randomIntFromInterval(1119, 2119))
-            }
-            if(msg.content.startsWith(`credits`)){
-                if(msg.channel.id !== "510836021357838336") return;
-                if(msg.isMentioned(client_6.user)){
-                    farm.set(`farm`, 'blah blah')
-                    let args = msg.content.split(` `)
-                    msg.channel.send(`#credits <@!${msg.author.id}> ${args[2]}`).then(()=>{
-                        const filter = m => m.author.id === msg.author.id;
-                        msg.channel.awaitMessages(filter, {max: 1, time: 29000}).then(col=>{
-                            if(col.first().content === "cancel"){
-                                return msg.reply(`Canceled!`);
-                            }
-                            msg.channel.send(`${col.first().content}`).then(()=> farm.set(`farm`, 'true'))
-                        })
-                    })
-                }
-            }
-        }
-    });
+ client4.on('ready', () => {
+  console.log(`Logged in as ${client4.user.tag}!`);  
+  client4.user.setGame(`SPAM ? (4)`,"http://twitch.tv/Dream")
+  client4.user.setStatus("dnd")
 
-    client1.login("NDg4NDQ2NDk5MTEwMzg3NzEz.DncU-w.tXd241v3TEyUsg2AISVAKVR4")
-    client_2.login("NDg4NDQ2OTIzNDc3NjE0NTky.DncVwQ.hXqIrM_uGT-jfKt0cHyUo")
-    client_3.login("NDAzNTgxOTI2MjUxOTU0MTc5.DUJYsg.Q20PLeDd2vo-HRsNpAG_8nU")
-    client_4.login("NDg4NDQ3ODE2NTIwMzAyNTky.DncWQw.Ct-qSo81rg_21FmSnI")
-    client_5.login("NDgwMTY0MjgzNzIwNjYzMDQx.DncXvQ.e-hZRQgC2hnCu9DBtMTw")
-    client_6.login("NDg4NDQ5OTMwODg1ODU3MzEw.DncYSg.etk1SsUO")
+});
+
+client4.on('ready', async() => {
+var server = "508196822242689030"; // ايدي السررفر
+var channel = "508196822242689032";//ايدي الروم
+    setInterval(()=>{
+    client.guilds.get(server).channels.get(channel).send('***FAST IS OP***')
+    },305);
+})
+
+client4.on('message', message => {
+  if (message.author.bot) return;
+  if (!message.content.startsWith(prefix4)) return;
+
+  let command4 = message.content.split(" ")[0];
+  command4 = command4.slice(prefix4.length);
+
+  let args = message.content.split(" ").slice(1);
+
+  if (command4 == "say") {
+    if(!message.member.hasPermission('ADMINISTRATOR')) return message.channel.send('?|**\`ADMINISTRATOR\`ليس لديك صلاحيات`**');
+   message.channel.sendMessage(args.join("  "))
+   message.delete()
+  }
+ });
+
+
+
+
+ client5.on('ready', () => {
+  console.log(`Logged in as ${client5.user.tag}!`);  
+  client5.user.setGame(`SPAM ? (5)`,"http://twitch.tv/Dream")
+  client5.user.setStatus("dnd")
+
+});
+
+client5.on('ready', async() => {
+var server = "508196822242689030"; // ايدي السررفر
+var channel = "508196822242689032";//ايدي الروم
+    setInterval(()=>{
+    client.guilds.get(server).channels.get(channel).send('***FAST IS OP***')
+    },305);
+})
+
+client5.on('message', message => {
+  if (message.author.bot) return;
+  if (!message.content.startsWith(prefix5)) return;
+
+  let command5 = message.content.split(" ")[0];
+  command5 = command5.slice(prefix5.length);
+
+  let args = message.content.split(" ").slice(1);
+
+  if (command5 == "say") {
+    if(!message.member.hasPermission('ADMINISTRATOR')) return message.channel.send('?|**\`ADMINISTRATOR\`ليس لديك صلاحيات`**');
+   message.channel.sendMessage(args.join("  "))
+   message.delete()
+  }
+ });
+
+
+
+
+
+
+
+
+
+
+
+ client6.on('ready', () => {
+  console.log(`Logged in as ${client6.user.tag}!`);  
+  client6.user.setGame(`SPAM ? (6)`,"http://twitch.tv/Dream")
+  client6.user.setStatus("dnd")
+
+});
+
+client6.on('ready', async() => {
+var server = "508196822242689030"; // ايدي السررفر
+var channel = "508196822242689032";//ايدي الروم
+    setInterval(()=>{
+    client.guilds.get(server).channels.get(channel).send('***FAST IS OP***')
+    },305);
+})
+
+client6.on('message', message => {
+  if (message.author.bot) return;
+  if (!message.content.startsWith(prefix6)) return;
+
+  let command6 = message.content.split(" ")[0];
+  command6 = command6.slice(prefix6.length);
+
+  let args = message.content.split(" ").slice(1);
+
+  if (command6 == "say") {
+    if(!message.member.hasPermission('ADMINISTRATOR')) return message.channel.send('?|**\`ADMINISTRATOR\`ليس لديك صلاحيات`**');
+   message.channel.sendMessage(args.join("  "))
+   message.delete()
+  }
+ });
+
+ 
+
+
+
+ client7.on('ready', () => {
+  console.log(`Logged in as ${client7.user.tag}!`);  
+  client7.user.setGame(`SPAM ? (7)`,"http://twitch.tv/Dream")
+  client7.user.setStatus("dnd")
+
+});
+
+client7.on('ready', async() => {
+var server = "508196822242689030"; // ايدي السررفر
+var channel = "508196822242689032";//ايدي الروم
+    setInterval(()=>{
+    client.guilds.get(server).channels.get(channel).send('***FAST IS OP***')
+    },305);
+})
+
+client7.on('message', message => {
+  if (message.author.bot) return;
+  if (!message.content.startsWith(prefix7)) return;
+
+  let command7 = message.content.split(" ")[0];
+  command7 = command7.slice(prefix7.length);
+
+  let args = message.content.split(" ").slice(1);
+
+  if (command7 == "say") {
+    if(!message.member.hasPermission('ADMINISTRATOR')) return message.channel.send('?|**\`ADMINISTRATOR\`ليس لديك صلاحيات`**');
+   message.channel.sendMessage(args.join("  "))
+   message.delete()
+  }
+ });
+
+
+client.login(process.env.TOKEN);
+client.login(process.env.TOKEN2);
+client.login(process.env.TOKEN3);
+client.login(process.env.TOKEN4);
+client.login(process.env.TOKEN5);
+client.login(process.env.TOKEN6);
+client.login(process.env.TOKEN7);
