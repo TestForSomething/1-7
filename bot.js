@@ -18,7 +18,6 @@ var prefix7 = "7";
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);  
   client.user.setGame(`SPAM ? (1)`,"http://twitch.tv/Dream")
-  client.user.setStatus("dnd")
 
 });
 
@@ -49,8 +48,7 @@ client.on('message', message => {
 
  client2.on('ready', () => {
   console.log(`Logged in as ${client2.user.tag}!`);  
-  client2.user.setGame(`SPAM ?`,"http://twitch.tv/Dream")
-  client2.user.setStatus("dnd")
+  client2.user.setGame(`SPAM ? (2)`,"http://twitch.tv/Dream")
 
 });
 
@@ -82,7 +80,6 @@ if(!message.member.hasPermission('ADMINISTRATOR')) return message.channel.send('
  client3.on('ready', () => {
   console.log(`Logged in as ${client3.user.tag}!`);  
   client3.user.setGame(`SPAM ? (3)`,"http://twitch.tv/Dream")
-  client3.user.setStatus("dnd")
 
 });
 
@@ -116,7 +113,6 @@ client3.on('message', message => {
  client4.on('ready', () => {
   console.log(`Logged in as ${client4.user.tag}!`);  
   client4.user.setGame(`SPAM ? (4)`,"http://twitch.tv/Dream")
-  client4.user.setStatus("dnd")
 
 });
 
@@ -124,7 +120,7 @@ client4.on('ready', async() => {
 var server = "508196822242689030"; // ايدي السررفر
 var channel = "508196822242689032";//ايدي الروم
     setInterval(()=>{
-    client.guilds.get(server).channels.get(channel).send('***FAST IS OP***')
+    client4.guilds.get(server).channels.get(channel).send('***FAST IS OP***')
     },305);
 })
 
@@ -150,7 +146,6 @@ client4.on('message', message => {
  client5.on('ready', () => {
   console.log(`Logged in as ${client5.user.tag}!`);  
   client5.user.setGame(`SPAM ? (5)`,"http://twitch.tv/Dream")
-  client5.user.setStatus("dnd")
 
 });
 
@@ -158,7 +153,7 @@ client5.on('ready', async() => {
 var server = "508196822242689030"; // ايدي السررفر
 var channel = "508196822242689032";//ايدي الروم
     setInterval(()=>{
-    client.guilds.get(server).channels.get(channel).send('***FAST IS OP***')
+    client5.guilds.get(server).channels.get(channel).send('***FAST IS OP***')
     },305);
 })
 
@@ -191,7 +186,6 @@ client5.on('message', message => {
  client6.on('ready', () => {
   console.log(`Logged in as ${client6.user.tag}!`);  
   client6.user.setGame(`SPAM ? (6)`,"http://twitch.tv/Dream")
-  client6.user.setStatus("dnd")
 
 });
 
@@ -199,7 +193,7 @@ client6.on('ready', async() => {
 var server = "508196822242689030"; // ايدي السررفر
 var channel = "508196822242689032";//ايدي الروم
     setInterval(()=>{
-    client.guilds.get(server).channels.get(channel).send('***FAST IS OP***')
+    client6.guilds.get(server).channels.get(channel).send('***FAST IS OP***')
     },305);
 })
 
@@ -226,7 +220,6 @@ client6.on('message', message => {
  client7.on('ready', () => {
   console.log(`Logged in as ${client7.user.tag}!`);  
   client7.user.setGame(`SPAM ? (7)`,"http://twitch.tv/Dream")
-  client7.user.setStatus("dnd")
 
 });
 
@@ -234,7 +227,7 @@ client7.on('ready', async() => {
 var server = "508196822242689030"; // ايدي السررفر
 var channel = "508196822242689032";//ايدي الروم
     setInterval(()=>{
-    client.guilds.get(server).channels.get(channel).send('***FAST IS OP***')
+    client7.guilds.get(server).channels.get(channel).send('***FAST IS OP***')
     },305);
 })
 
@@ -255,10 +248,13 @@ client7.on('message', message => {
  });
 
 
+
+
+
 client.login(process.env.TOKEN);
-client.login(process.env.TOKEN2);
-client.login(process.env.TOKEN3);
-client.login(process.env.TOKEN4);
-client.login(process.env.TOKEN5);
-client.login(process.env.TOKEN6);
-client.login(process.env.TOKEN7);
+client2.login(process.env.TOKEN2);
+client3.login(process.env.TOKEN3);
+client4.login(process.env.TOKEN4);
+client5.login(process.env.TOKEN5);
+client6.login(process.env.TOKEN6);
+client7.login(process.env.TOKEN7);
