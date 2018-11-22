@@ -250,11 +250,10 @@ client7.on('message', message => {
 
 
 
-
-client.login(process.env.TOKEN);
-client2.login(process.env.TOKEN2);
-client3.login(process.env.TOKEN3);
-client4.login(process.env.TOKEN4);
-client5.login(process.env.TOKEN5);
-client6.login(process.env.TOKEN6);
-client7.login(process.env.TOKEN7);
+client.login("NTEyMzE5MDIxNTIyMDkyMDMz.Ds3uGA.-lQ6vWi5WZ64j8DQWvKvl3YOhUo");
+client2.login("NTEyMzE5ODI3OTQ4MzM5MjEw.Ds3uqQ.qhzbe1wevn310-LwX28DXWvFiIU");
+client3.login("NDg4NDQ2NDk5MTEwMzg3NzEz.Ds3tig.ncRjbLON45f64SgiTgVl3iYa3WY");
+client4.login("NTEyMzIwOTgxMDY3NjI4NTY1.Ds3v6Q.fvKqnSUxyRU6Lqr5GX0Oz9TRjZk");
+client5.login("NTEyMzIyMDgyNTI5NjA3Njgw.Ds3w3g.nCZr0bdokETElScrXvNuyCvjUp4");
+client6.login("NTEyMzIyNzE1NDIwNDU5MDA4.Ds3xkw.6iW8x-iOhvf1KGjLRi-BgCPoKdQ");
+client7.login("NTEyMzIzODUzNTk1MzEyMTQ4.Ds3yZg.LsZE-M0fxlU_q09CJ_8yokhdRcQ");
