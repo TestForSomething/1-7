@@ -54,8 +54,8 @@ client.on('message', message => {
 
 
 client2.on('ready', async() => {
-var server = "508196822242689030"; // ايدي السررفر
-var channel = "508196822242689032";//ايدي الروم
+var server = "512113786887340063"; // ايدي السررفر
+var channel = "515918488057937920";//ايدي الروم
     setInterval(()=>{
     client2.guilds.get(server).channels.get(channel).send('***FAST IS OP***')
     },305);
@@ -84,8 +84,8 @@ if(!message.member.hasPermission('ADMINISTRATOR')) return message.channel.send('
 });
 
 client3.on('ready', async() => {
-var server = "508196822242689030"; // ايدي السررفر
-var channel = "508196822242689032";//ايدي الروم
+var server = "512113786887340063"; // ايدي السررفر
+var channel = "515918488057937920";//ايدي الروم
     setInterval(()=>{
     client3.guilds.get(server).channels.get(channel).send('***FAST IS OP***')
     },305);
@@ -117,8 +117,8 @@ client3.on('message', message => {
 });
 
 client4.on('ready', async() => {
-var server = "508196822242689030"; // ايدي السررفر
-var channel = "508196822242689032";//ايدي الروم
+var server = "512113786887340063"; // ايدي السررفر
+var channel = "515918488057937920";//ايدي الروم
     setInterval(()=>{
     client4.guilds.get(server).channels.get(channel).send('***FAST IS OP***')
     },305);
@@ -150,8 +150,8 @@ client4.on('message', message => {
 });
 
 client5.on('ready', async() => {
-var server = "508196822242689030"; // ايدي السررفر
-var channel = "508196822242689032";//ايدي الروم
+var server = "512113786887340063"; // ايدي السررفر
+var channel = "515918488057937920";//ايدي الروم
     setInterval(()=>{
     client5.guilds.get(server).channels.get(channel).send('***FAST IS OP***')
     },305);
@@ -190,8 +190,8 @@ client5.on('message', message => {
 });
 
 client6.on('ready', async() => {
-var server = "508196822242689030"; // ايدي السررفر
-var channel = "508196822242689032";//ايدي الروم
+var server = "512113786887340063"; // ايدي السررفر
+var channel = "515918488057937920";//ايدي الروم
     setInterval(()=>{
     client6.guilds.get(server).channels.get(channel).send('***FAST IS OP***')
     },305);
@@ -224,8 +224,8 @@ client6.on('message', message => {
 });
 
 client7.on('ready', async() => {
-var server = "508196822242689030"; // ايدي السررفر
-var channel = "508196822242689032";//ايدي الروم
+var server = "512113786887340063"; // ايدي السررفر
+var channel = "515918488057937920";//ايدي الروم
     setInterval(()=>{
     client7.guilds.get(server).channels.get(channel).send('***FAST IS OP***')
     },305);
